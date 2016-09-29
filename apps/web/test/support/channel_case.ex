@@ -20,11 +20,6 @@ defmodule AppTemplate.Web.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias AppTemplate.Web.Repo
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query
-
 
       # The default endpoint for testing
       @endpoint AppTemplate.Web.Endpoint
@@ -32,11 +27,6 @@ defmodule AppTemplate.Web.ChannelCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(AppTemplate.Web.Repo)
-
-    unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(AppTemplate.Web.Repo, {:shared, self()})
-    end
 
     :ok
   end

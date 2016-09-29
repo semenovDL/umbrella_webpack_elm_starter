@@ -36,7 +36,7 @@ defmodule AppTemplate.Web.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_web_key",
-    signing_salt: "E2ThqCOt"
+    signing_salt: "jhyBRBw2"
 
   plug AppTemplate.Web.Router
 end

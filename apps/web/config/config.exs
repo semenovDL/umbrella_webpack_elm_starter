@@ -7,13 +7,12 @@ use Mix.Config
 
 # General application configuration
 config :web,
-  namespace: AppTemplate.Web,
-  ecto_repos: [AppTemplate.Web.Repo]
+  namespace: AppTemplate.Web
 
 # Configures the endpoint
 config :web, AppTemplate.Web.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "fC01wnRLH0DHVrfhmiAfW60jCAh5qsoRnSVygOvvgZ+w99dPf8qDN1tVVYSbFp8Q",
+  secret_key_base: "IQQiCc1eo/jNa9IrflRPWmsrSlZlZb97SAL1ZMyxt8MIPINPMe/cqOU4lsjX7/PV",
   render_errors: [view: AppTemplate.Web.ErrorView, accepts: ~w(html json)],
   pubsub: [name: AppTemplate.Web.PubSub,
            adapter: Phoenix.PubSub.PG2]

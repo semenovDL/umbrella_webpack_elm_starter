@@ -1,0 +1,13 @@
+version: '2'
+services:
+  db:
+    image: postgres:9.5.3
+    restart: always
+    ports:
+    - '5432:5432'
+    volumes:
+      - data-postgres:/var/lib/postgresql/data
+
+volumes:
+  data-postgres:
+    driver: local

@@ -18,21 +18,13 @@ defmodule AppTemplate.Web.Web do
 
   def model do
     quote do
-      use Ecto.Schema
-
-      import Ecto
-      import Ecto.Changeset
-      import Ecto.Query
+      # Define common model functionality
     end
   end
 
   def controller do
     quote do
       use Phoenix.Controller, namespace: AppTemplate.Web
-
-      alias AppTemplate.Web.Repo
-      import Ecto
-      import Ecto.Query
 
       import AppTemplate.Web.Router.Helpers
       import AppTemplate.Web.Gettext
@@ -64,10 +56,6 @@ defmodule AppTemplate.Web.Web do
   def channel do
     quote do
       use Phoenix.Channel
-
-      alias AppTemplate.Web.Repo
-      import Ecto
-      import Ecto.Query
       import AppTemplate.Web.Gettext
     end
   end
