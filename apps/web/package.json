@@ -1,0 +1,16 @@
+{
+  "name": "app_template",
+  "version": "1.0.0",
+  "description": "**TODO: Add description**",
+  "main": "index.js",
+  "dependencies": {
+    "webpack": "^1.13.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "webpack --watch-stdin --progress --color",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
