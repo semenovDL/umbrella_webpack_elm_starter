@@ -1,1 +1,2 @@
-alert('webpack again me.');
+var Elm = require('../elm/Main');
+Elm.Main.embed( document.getElementById( 'main' ) );

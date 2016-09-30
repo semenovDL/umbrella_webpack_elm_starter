@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "**TODO: Add description**",
   "main": "index.js",
-  "dependencies": {
-    "webpack": "^1.13.2"
-  },
   "devDependencies": {
+    "babel-core": "^6.16.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "elm": "^0.17.1",
+    "elm-webpack-loader": "^3.0.6",
     "webpack": "^1.13.2"
   },
   "scripts": {
