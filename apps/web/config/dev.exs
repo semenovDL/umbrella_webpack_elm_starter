@@ -11,7 +11,7 @@ config :web, AppTemplate.Web.Endpoint,
   debug_errors: true,
   code_reloader: true,
   check_origin: false,
-  watchers: [node: ["node_modules/webpack/bin/webpack.js", "--watch", "--color"]]
+  watchers: [npm: ["start", cd: Path.expand("../", __DIR__)]]
 
 
 # Watch static and templates for browser reloading.
